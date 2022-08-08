@@ -5,12 +5,10 @@
         <defaults public="true" />
         <!-- Put your Behat services here -->
 
-        <service id="webgriffe_sylius_meilisearch.context.ui.shop.welcome" class="Tests\Webgriffe\SyliusMeilisearchPlugin\Behat\Context\Ui\Shop\WelcomeContext">
-            <argument type="service" id="webgriffe_sylius_meilisearch.page.shop.static_welcome" />
-            <argument type="service" id="webgriffe_sylius_meilisearch.page.shop.dynamic_welcome" />
-        </service>
+<!--        <service id="webgriffe_sylius_meilisearch.context.ui.shop.example" class="Tests\Webgriffe\SyliusMeilisearchPlugin\Behat\Context\Ui\Shop\ExampleContext">-->
+<!--            <argument type="service" id="webgriffe_sylius_meilisearch.page.shop.example" />-->
+<!--        </service>-->
 
-        <service id="webgriffe_sylius_meilisearch.page.shop.static_welcome" class="Tests\Webgriffe\SyliusMeilisearchPlugin\Behat\Page\Shop\StaticWelcomePage" parent="sylius.behat.symfony_page" public="false" />
-        <service id="webgriffe_sylius_meilisearch.page.shop.dynamic_welcome" class="Tests\Webgriffe\SyliusMeilisearchPlugin\Behat\Page\Shop\DynamicWelcomePage" parent="sylius.behat.symfony_page" public="false" />
+<!--        <service id="webgriffe_sylius_meilisearch.page.shop.example" class="Tests\Webgriffe\SyliusMeilisearchPlugin\Behat\Page\Shop\ExamplePage" parent="sylius.behat.symfony_page" public="false" />-->
     </services>
 </container>
