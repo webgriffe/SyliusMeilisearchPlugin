@@ -1,10 +1,15 @@
 # Put your Behat suites definitions here
 
-#default:
-#    suites:
-#        example:
-#            contexts:
-#                - webgriffe_sylius_meilisearch.context.ui.shop.example
-#
-#            filters:
-#                tags: "@example"
+default:
+    suites:
+        indexing_products:
+            contexts:
+              - sylius.behat.context.hook.doctrine_orm
+
+              - sylius.behat.context.setup.channel
+              - sylius.behat.context.setup.product
+
+              - webgriffe_sylius_meilisearch.behat.context.cli.import
+
+            filters:
+                tags: "@indexing_products"

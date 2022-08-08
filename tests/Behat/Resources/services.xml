@@ -5,9 +5,9 @@
         <defaults public="true" />
         <!-- Put your Behat services here -->
 
-<!--        <service id="webgriffe_sylius_meilisearch.context.ui.shop.example" class="Tests\Webgriffe\SyliusMeilisearchPlugin\Behat\Context\Ui\Shop\ExampleContext">-->
-<!--            <argument type="service" id="webgriffe_sylius_meilisearch.page.shop.example" />-->
-<!--        </service>-->
+        <service id="webgriffe_sylius_meilisearch.behat.context.cli.import" class="Tests\Webgriffe\SyliusMeilisearchPlugin\Behat\Context\Cli\ImportContext">
+            <argument type="service" id="MeiliSearch\Bundle\Command\MeiliSearchImportCommand" />
+        </service>
 
 <!--        <service id="webgriffe_sylius_meilisearch.page.shop.example" class="Tests\Webgriffe\SyliusMeilisearchPlugin\Behat\Page\Shop\ExamplePage" parent="sylius.behat.symfony_page" public="false" />-->
     </services>
