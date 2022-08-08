@@ -1,10 +1,10 @@
 # Put your Behat suites definitions here
 
-default:
-    suites:
-        greeting_customer:
-            contexts:
-                - webgriffe_sylius_meilisearch.context.ui.shop.welcome
-
-            filters:
-                tags: "@greeting_customer"
+#default:
+#    suites:
+#        example:
+#            contexts:
+#                - webgriffe_sylius_meilisearch.context.ui.shop.example
+#
+#            filters:
+#                tags: "@example"

@@ -1,13 +1,7 @@
-# Delete these routes and define your own shop routes here
+# Define your own shop routes here
 
-webgriffe_sylius_meilisearch_static_welcome:
-    path: /static-welcome/{name}
-    defaults:
-        _controller: Webgriffe\SyliusMeilisearchPlugin\Controller\GreetingController::staticallyGreetAction
-        name: ~
-
-webgriffe_sylius_meilisearch_dynamic_welcome:
-    path: /dynamic-welcome/{name}
-    defaults:
-        _controller: Webgriffe\SyliusMeilisearchPlugin\Controller\GreetingController::dynamicallyGreetAction
-        name: ~
+#webgriffe_sylius_meilisearch_example:
+#    path: /example
+#    defaults:
+#        _controller: Webgriffe\SyliusMeilisearchPlugin\Controller\ExampleController::exampleAction
+#        name: ~
